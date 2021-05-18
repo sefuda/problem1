@@ -1,0 +1,131 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+.team_section {
+    padding: 100px 0;
+}
+
+.team_section .team_box {
+    margin: 20px 10px;
+    border: 1px solid #ddd;
+}
+
+.team_section .team_box .image_inner {
+    height: 263px;
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.team_section .team_box .image_inner:hover::before {
+    height: 50%;
+}
+.team_section .team_box .image_inner::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    transition: 0.4s;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+}
+.team_section .team_box .image_inner:hover::after {
+    height: 50%;
+}
+.team_section .team_box .image_inner::after {
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    transition: 0.4s;
+    border-top-left-radius: 30px;
+}
+
+.team_section .team_box .image_inner:hover a::before {
+    width: 50%;
+}
+.team_section .team_box .image_inner a::before {
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 50%;
+    background: rgba(11, 145, 223, 0.534);
+    position: absolute;
+    transition: 0.4s;
+    border-bottom-left-radius: 30px;
+    z-index: 2;
+}
+
+.team_section .team_box .image_inner:hover a::after {
+    width: 50%;
+}
+.team_section .team_box .image_inner a::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background: rgba(11, 145, 223, 0.534);
+    position: absolute;
+    transition: 0.4s;
+    border-top-right-radius: 30px;
+}
+.team_section .team_box .image_inner:hover span::before {
+    transform: rotate(136deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.team_section .team_box .image_inner span::before {
+    content: "\f0c1";
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(12, 169, 231);
+    color: white;
+    top: 41%;
+    left: 42%;
+    z-index: 22;
+    transform: rotate(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.team_section .team_box .image_inner {
+    overflow: hidden;
+}
+.team_section .team_box .image_inner:hover img {
+    transform: scale(1.2);
+}
+.team_section .team_box .image_inner img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.team_section .team_box {
+    position: relative;
+    border: 1px solid #ddd;
+}
+.team_section .team_box:hover .bottom {
+    top: 300px;
+}
+.team_section .team_box .bottom {
+    text-align: center;
+    padding: 10px;
+}
+.team_section .team_box .bottom h5 {
+    text-transform: capitalize;
+}
+
+
+
